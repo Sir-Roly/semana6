@@ -81,7 +81,7 @@
 			<executions>
 			<execution>
 			<goals>
-			<goal>test-jar</goal>
+			<goal>test-1.0-SNAPSHOT-jar</goal>
 			</goals>
 			</execution>
 			</executions>
