@@ -78,14 +78,12 @@
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-jar-plugin</artifactId>
 			<version>3.2.0</version>
-			<executions>
-			<execution>
-			<goals>
-			<goal>test-1.0-SNAPSHOT-jar</goal>
-			</goals>
-			</execution>
-			</executions>
-		</plugin>
+			<configuration>
+			  <archive>
+			    <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+			  </archive>
+			</configuration>
+      		</plugin>
 	</plugins>
   </build>
 </project>
